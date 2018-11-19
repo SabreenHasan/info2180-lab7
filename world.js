@@ -1,11 +1,9 @@
 window.onload = startUp;
 
-function startUp {
+function startUp() {
 	var httpReq;
 	var lookUpButtn = document.getElementById("lookup");
-	lookUpButtn.addEventListener('click', runLookUp()
-
-function runLookUp(e) {
+	lookUpButtn.addEventListener('click', function runLookUp(e) {
 	e.preventDefault();
 	httpReq = new XMLHttpRequest();
 
@@ -23,8 +21,7 @@ function load () {
         if (httpReq.status === 200)
         {
             var response = httpReq.responseText;
-            var input = document.getElementById("country").value;
-            alert(document.getElementById("result").innerHTML = response);
+            alert(response);
         }
         else
         {
