@@ -33,13 +33,6 @@ input {
 	text-align: center;
 }
 
-#result {
-	background-color: white;
-	height: 600px;
-	width: 600px;
-	visibility: hidden;
-}
-
 #topBorder {
 	background-color: #008060;
 	width: 1200px;
